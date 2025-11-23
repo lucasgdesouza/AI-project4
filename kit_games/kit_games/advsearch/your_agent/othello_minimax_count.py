@@ -36,21 +36,11 @@ def evaluate_count(state, player:str) -> float:
     :param state: state to evaluate (instance of GameState)
     :param player: player to evaluate the state for (B or W)
     """
-    if state.is_terminal():
-        winner = state.winner()
-
-        if winner == player:
-            return float('inf') #Vitoria
-        elif winner is None:
-            return 0.0 #Empate
-        else:
-            return float('-inf') #Derrota
         
     board = state.board
+    opponent = 'W' if player == 'B' else 'B'
 
     player_count = board.num_pieces(player)
-
-    opponent = 'W' if player == 'B' else 'B'
     opponent_count = board.num_pieces(opponent)
 
     return player_count - opponent_count
