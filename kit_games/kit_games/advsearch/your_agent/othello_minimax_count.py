@@ -23,7 +23,9 @@ def make_move(state) -> Tuple[int, int]:
     # Remova-o e coloque uma chamada para o minimax_move (que vc implementara' no modulo minimax).
     # A chamada a minimax_move deve receber sua funcao evaluate como parametro.
 
-    return random.choice([(2, 3), (4, 5), (5, 4), (3, 2)])
+    depth = 3
+
+    return minimax_move(state, depth, evaluate_count)
 
 
 def evaluate_count(state, player:str) -> float:
@@ -34,4 +36,21 @@ def evaluate_count(state, player:str) -> float:
     :param state: state to evaluate (instance of GameState)
     :param player: player to evaluate the state for (B or W)
     """
-    return 0   # substitua pelo seu codigo
+    if state.is_terminal():
+        winner = state.winner()
+
+        if winner == player:
+            return float('inf') #Vitoria
+        elif winner is None:
+            return 0.0 #Empate
+        else:
+            return float('-inf') #Derrota
+        
+    board = state.board
+
+    player_count = board.num_pieces(player)
+
+    opponent = 'W' if player == 'B' else 'B'
+    opponent_count = board.num_pieces(opponent)
+
+    return player_count - opponent_count
