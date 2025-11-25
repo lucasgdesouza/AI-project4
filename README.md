@@ -8,7 +8,7 @@ Implementação de busca com adversários em Jogo da Velha Invertido e Othello:
 
 - Nome do agente (your_agent) escolhido: aggressive_pointer.
 
-- Jogo da velha invertido:
+- Jogo da Velha Invertido:
 
 i) O minimax sempre ganha ou empata jogando contra o randomplayer?
   Sim, foram feitos 50 testes alternando 25 numa configuração de cores e os outros 25 na outra configuração. Em todos os 50 testes, o minimax ganhou ou empatou com o randomplayer. Seguem os dados coletados:
