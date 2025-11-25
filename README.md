@@ -29,14 +29,19 @@ Heurística Custom: A ideia por trás da Heurística foi criar algo mais agressi
 
 Seus critérios de parada são dois: chegar a uma profundidade de 4 ou o fim do jogo de Othello como um todo.
 
-Resultados de testes entre os algoritmos:
+Resultados de testes entre os algoritmos, mais comparação de número de peças conquistadas:
 Condições de teste: D = 5 e Pace = 0.3 segundos.
 
 Count vs Mask - 20 x 44.
+
 Mask vs Count - 45 x 19.
+
 Count vs Custom - 15 x 49.
+
 Custom vs Count - 17 x 47.
+
 Mask vs Custom - 13 x 51.
+
 Custom vs Mask - 49 x 15.
 
 No geral, Custom > Mask > Count.
