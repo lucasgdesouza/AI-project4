@@ -1,6 +1,6 @@
 Trabalho 4 - Busca com Adversário
 
-Nomes: (turma A)
+Nomes (turma A):
 Lucas Fraga Balbinot - 00585249
 Lucas Gomes de Souza - 00580466
 
