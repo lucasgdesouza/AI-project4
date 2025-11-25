@@ -6,6 +6,8 @@ Lucas Gomes de Souza - 00580466
 
 Implementação de busca com adversários em jogo da velha invertido e Othello
 
+Nome do agente (your_agent) escolhido: aggressive_pointer.
+
 Jogo da velha invertido:
 
 i) O minimax sempre ganha ou empata jogando contra o randomplayer?
