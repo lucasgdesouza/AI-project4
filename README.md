@@ -25,11 +25,12 @@ minimax (W) x humanplayer (B) = 4 wins do minimax.
 
 - Othello:
 
+  - Explicação da heurística customizada:
 Heurística Custom: A ideia por trás da Heurística foi criar algo mais agressivo e que foque em conquistar pontos e manter na ofensiva. Ele faz cálculos relativos ao que pode providenciar mais pontuação a curto prazo. Também é um sistema que foca em tentar tomar controle dos cantos, devido ao fato de serem um dos únicos pontos em que as peças são impossíveis de serem roubadas, garantindo pontos. Tal sistema foi desenvolvido com o auxílio do Google Gemini.
 
-Seus critérios de parada são dois: chegar a uma profundidade de 4 ou o fim do jogo de Othello como um todo.
+  - Seus critérios de parada são dois: chegar a uma profundidade de 4 ou o fim do jogo de Othello como um todo.
 
-Resultados de testes entre os algoritmos, mais comparação de número de peças conquistadas:
+  - Resultados de testes entre os algoritmos, mais comparação de número de peças conquistadas:
 Condições de teste: D = 5 e Pace = 0.3 segundos.
 
 Count vs Mask - 20 x 44.
@@ -45,7 +46,8 @@ Mask vs Custom - 13 x 51.
 Custom vs Mask - 49 x 15.
 
 No geral, Custom > Mask > Count.
-
-Implementado: O desempenho de custom foi notável o bastante que ele foi selecionado para servir como nosso agente.
-
-- Foi implementado um MCTS em mcts.py como extra.
+ 
+  - Explicação da implementação para o torneio: O desempenho de custom foi notável o bastante que ele foi selecionado para servir como nosso agente.
+  
+  - Extras:
+   - Foi implementado um MCTS em mcts.py como extra.
