@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<othello-match>
+	<timing start="Tue Nov 25 11:36:55 2025" finish="Tue Nov 25 11:42:33 2025"/>
+	<player directory="advsearch\humanplayer" color="B" result="draw" score="0"/>
+	<player directory="advsearch\aggressive_pointer" color="W" result="draw" score="0"/>
+	<moves>
+		<move coord="1,0" color="B"/>
+		<move coord="0,1" color="W"/>
+		<move coord="1,2" color="B"/>
+		<move coord="2,0" color="W"/>
+		<move coord="2,1" color="B"/>
+		<move coord="0,0" color="W"/>
+		<move coord="2,2" color="B"/>
+		<move coord="1,1" color="W"/>
+	</moves>
+</othello-match>
