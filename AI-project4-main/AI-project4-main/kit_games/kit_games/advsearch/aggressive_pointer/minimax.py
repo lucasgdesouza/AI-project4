@@ -1,5 +1,6 @@
 import math
 from typing import Tuple, Callable
+import random
 
 
 def minimax_move(state, max_depth: int, eval_func: Callable) -> Tuple[int, int]:
@@ -56,4 +57,11 @@ def minimax_move(state, max_depth: int, eval_func: Callable) -> Tuple[int, int]:
     search_depth = max_depth if max_depth >= 0 else 60
 
     _, best = minimax(state, search_depth, -math.inf, math.inf, True)
+
+    if best is None:
+        possible_moves = state.legal_moves()
+        if possible_moves:
+            return random.choice(list(possible_moves))
+        else:
+            return (-1, -1)
     return best
